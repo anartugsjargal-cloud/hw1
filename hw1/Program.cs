@@ -10,6 +10,19 @@ namespace hw1
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("А. С. Пушкин");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Я помню чудное мгновенье...");
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Я помню чудное мгновенье:");
+            Console.WriteLine("Передо мной явилась ты,");
+            Console.WriteLine("Как мимолётное виденье,");
+            Console.WriteLine("Как гений чистой красоты.");
+            Console.ResetColor();
+
         }
     }
 }
