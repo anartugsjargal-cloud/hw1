@@ -10,6 +10,14 @@ namespace hw1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите сторону квадрата:");
+            double a = Convert.ToDouble(Console.ReadLine());
+
+            double S = a * a;
+            double P = 4 * a;
+
+            Console.WriteLine("Площадь квадрата: " + S);
+            Console.WriteLine("Периметр квадрата: " + P);
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("А. С. Пушкин");
 
