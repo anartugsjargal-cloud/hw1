@@ -10,27 +10,17 @@ namespace hw1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите сторону квадрата:");
-            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите четырехзначное число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            double S = a * a;
-            double P = 4 * a;
+            int a = number / 1000;
+            int b = (number / 100) % 10;  
+            int c = (number / 10) % 10;
+            int d = number % 10;
 
-            Console.WriteLine("Площадь квадрата: " + S);
-            Console.WriteLine("Периметр квадрата: " + P);
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("А. С. Пушкин");
+            int reversed = d * 1000 + c * 100 + b * 10 + a;
 
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("Я помню чудное мгновенье...");
-
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Я помню чудное мгновенье:");
-            Console.WriteLine("Передо мной явилась ты,");
-            Console.WriteLine("Как мимолётное виденье,");
-            Console.WriteLine("Как гений чистой красоты.");
-            Console.ResetColor();
-
+            Console.WriteLine("Число с обратным порядком цифр: " + reversed);
         }
     }
 }
