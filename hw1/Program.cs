@@ -24,6 +24,6 @@ namespace hw1
             }
 
             Console.WriteLine("Сумма = " + sum);
-    }
+        }
     }
 }
